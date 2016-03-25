@@ -111,7 +111,7 @@ Here is a  [practice final](practice_final.pdf), ([solution](practice_final_solu
 
 ### Week 1 
 
-- [Chapter 3: Graphical Summaries & Histogram](http://nbviewer.jupyter.org/format/slides/url/stat60.stanford.edu/Graphical_Summaries.ipynb)
+- [Chapter 3: Graphical Summaries & Histogram](http://nbviewer.jupyter.org/format/slides/url/stats60.stanford.edu/Graphical_Summaries.ipynb)
 
 - [Chapter 4: Average, SD and Numeric Summaries](http://nbviewer.jupyter.org/format/slides/url/stats60.stanford.edu/Numeric_Summaries.ipynb)
 
