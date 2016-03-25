@@ -5,6 +5,8 @@ from pylab import poly_between
 
 ndist = scipy.stats.norm
 
+from utils import sample_density
+
 def stylized_density(sample, ax=None, regions=[],
                      alpha=0.7, mult=None):
    regions = list(regions)
@@ -304,3 +306,61 @@ def CAdensity(figsize=(8,8)):
     def area(a, b):
         return np.round(100*(CDF(b) - CDF(a)), 1)
     return hist_fig, dens, area
+
+def SD_rule_of_thumb_normal(mult, ax=None, bins=30, regions=(), **opts):
+
+   sample = (np.random.standard_normal(size=(5000,)) - 1) * 0.3 + 1 + np.random.uniform(size=(5000,)) * 2.
+   if ax is None:
+      fig = plt.gcf()
+      ax = fig.add_subplot(111)
+      
+   ax, density, CDF = sample_density(sample, bins=bins, **opts)
+   SD = np.std(sample)
+   ax.annotate('Average', xy=(np.mean(sample), 0),
+              arrowprops=dict(facecolor='black'), xytext=(np.mean(sample),-0.2),
+              fontsize=20,
+              horizontalalignment='center')
+
+   interval = np.linspace(np.mean(sample) - mult * SD,
+                          np.mean(sample) + mult * SD,
+                          500)
+   ax.fill_between(interval, 0*interval, density(interval), 
+                   hatch='/',
+                   facecolor='yellow')
+
+   standY = (sample - np.mean(sample)) / SD
+   within = (np.fabs(standY) <= mult).sum() * 1. / sample.shape[0] * 100
+   ax.set_title('Percentage within %0.1f SD: %d %%' % (mult, int(within)), fontsize=20, color='red')
+   ax.set_yticks([])
+   ax.set_ylim([0,ax.get_ylim()[1]])
+   return ax
+
+def SD_rule_of_thumb_skewed(mult, ax=None, bins=30, regions=(), **opts):
+
+   sample = np.random.exponential(size=15000) * 1.1 + np.random.uniform(size=15000) * 2.
+
+   if ax is None:
+      fig = plt.gcf()
+      ax = fig.add_subplot(111)
+      
+   ax, density, CDF = sample_density(sample, bins=bins, **opts)
+   SD = np.std(sample)
+   ax.annotate('Average', xy=(np.mean(sample), 0),
+              arrowprops=dict(facecolor='black'), xytext=(np.mean(sample),-0.1),
+              fontsize=20,
+              horizontalalignment='center')
+
+   interval = np.linspace(np.mean(sample) - mult * SD,
+                          np.mean(sample) + mult * SD,
+                          500)
+   ax.fill_between(interval, 0*interval, density(interval), 
+                   hatch='/',
+                   facecolor='yellow')
+
+   standY = (sample - np.mean(sample)) / SD
+   within = (np.fabs(standY) <= mult).sum() * 1. / sample.shape[0] * 100
+   ax.set_title('Percentage within %0.1f SD: %d %%' % (mult, int(within)), fontsize=20, color='red')
+   ax.set_yticks([])
+   ax.set_xlim([-2,12])
+   ax.set_ylim([0,ax.get_ylim()[1]])
+   return ax
