@@ -1,0 +1,7 @@
+sphinx
+notedown
+rpy2
+numpy 
+scipy
+ipy_table
+nbconvert
