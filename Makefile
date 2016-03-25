@@ -32,10 +32,6 @@ html: $(NB_OUTPUTS) $(TABLE_OUTPUTS)
 
 slides: $(SLIDE_OUTPUTS)
 
-$(warning TABLES is $(TABLES))
-$(warning TABLE_OUTPUTS is $(TABLE_OUTPUTS))
-$(warning TABLE_HTML is $(TABLE_HTML))
-
 $(BUILD_DIR)/$(TABLES_DIR)%.html:$(BUILD_DIR)/$(TABLES_DIR)%.ipynb
 
 	jupyter nbconvert --to html $<;
@@ -55,8 +51,19 @@ tables : $(TABLE_OUTPUTS)
 	jupyter nbconvert --to=html build/Tables/Tail_normal_table.ipynb ;
 	mv Tail_normal_table.html build/Tables;
 
+$(BUILD_DIR)/index.html :
+	
+	mkdir -p sphinx;
+	notedown index.md > index.ipynb;
+	jupyter nbconvert --to=rst index.ipynb --output=index;
+	rm index.ipynb;
+	mv index.rst sphinx;
+	sphinx-build -E -b html sphinx _build/html ;
+	cp -r _build/html/* build;
+
 clean:
 	
-	rm -fr $(BUILD_DIR)
+	rm -fr $(BUILD_DIR);
+	rm -fr _build;
 
-all: html slides tables
+all: html slides tables $(BUILD_DIR)/index.html

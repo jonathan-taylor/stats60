@@ -5,3 +5,5 @@
 Tables/*pdf
 Tables/*tex
 build/
+_build/
+sphinx/index.rst
