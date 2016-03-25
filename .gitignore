@@ -1,5 +1,5 @@
 .ipynb_checkpoints/
-*/*.pyc
+notebooks/*/*.pyc
 */*~
 *~
 Tables/*pdf
