@@ -183,7 +183,7 @@ Here is a  [practice final](practice_final.pdf), ([solution](practice_final_solu
 
 ## Tables
 
-- [Symmetric normal table](Tables/Symmetric_normal_table.html)
-- [Tail normal table](Tables/Tail_normal_table.html)
-- [Tail T table](Tables/Tail_T_table.html)
-- [Tail Chisquared table](Tables/Tail_Chisquared_table.html)
+- [Symmetric normal table](Symmetric_normal_table.html)
+- [Tail normal table](Tail_normal_table.html)
+- [Tail T table](Tail_T_table.html)
+- [Tail Chisquared table](Tail_Chisquared_table.html)
