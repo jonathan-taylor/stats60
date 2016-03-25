@@ -1,3 +1,4 @@
+SUNET = jtaylo
 SHELL = /bin/bash
 PY_VER = $(shell python -c 'import sys; print(sys.version_info.major)')
 NOTEBOOK_DIR = notebooks
@@ -17,7 +18,7 @@ $(BUILD_DIR)/%.ipynb: $(NOTEBOOK_DIR)/%.ipynb
 	jupyter trust $<;
 
 $(BUILD_DIR)/%.slides.html:$(BUILD_DIR)/%.ipynb
-	jupyter nbconvert --to slides --reveal-prefix=http://cdn.jsdelivr.net/reveal.js/3.2.0 $<;
+	jupyter nbconvert --to slides --reveal-prefix=http://cdn.jsdelivr.net/reveal.js/2.6.2 $<;
 	# it seems to dump in this directory instead of $(BUILD_DIR)
 	mv `basename $@` $(BUILD_DIR);
 
@@ -25,9 +26,9 @@ html: $(NB_OUTPUTS)
 
 	pip install -q -r requirements.docs.txt
 
-	cp -r code $(BUILD_DIR)/code;
-	cp -r data $(BUILD_DIR)/data;
-	cp -r images $(BUILD_DIR)/images;
+	cp -r $(NOTEBOOK_DIR)/code $(BUILD_DIR)/code;
+	cp -r $(NOTEBOOK_DIR)/data $(BUILD_DIR)/data;
+	cp -r $(NOTEBOOK_DIR)/images $(BUILD_DIR)/images;
 	cp -r exercises $(BUILD_DIR)/exercises;
 
 slides: $(SLIDE_OUTPUTS)
@@ -67,3 +68,8 @@ clean:
 	rm -fr _build;
 
 all: html slides tables $(BUILD_DIR)/index.html
+
+	cp -r practice_quizzes $(BUILD_DIR)/practice_quizzes;
+
+deploy: 
+	rsync -avz build/* $(SUNET)@corn.stanford.edu:/afs/ir/class/stats60/WWW
