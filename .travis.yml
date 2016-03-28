@@ -19,7 +19,7 @@ install:
     - sudo apt-get install python-tz
     - sudo apt-get install jupyter
     - sudo apt-get install pandoc
-    - pip install -r requirements.docs.txt
+    - sudo pip install -r requirements.docs.txt
     # Make the html
     - make all
     - $PYTHON setup.py build
