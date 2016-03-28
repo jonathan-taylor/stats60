@@ -15,6 +15,7 @@ install:
     - sudo apt-get install $PYTHON-dev
     - sudo apt-get install $PYTHON-numpy
     - sudo apt-get install $PYTHON-scipy
+    - sudo apt-get install $PYTHON-matplotlib
     - sudo apt-get install python-rpy2
     - sudo apt-get install python-tz
     - sudo apt-get install pandoc
