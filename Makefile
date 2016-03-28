@@ -11,8 +11,8 @@ HTML_OUTPUTS = $(patsubst %.ipynb, %.html, $(NB_OUTPUTS))
 
 $(BUILD_DIR)/%.ipynb: $(NOTEBOOK_DIR)/%.ipynb
 	mkdir -p $(BUILD_DIR); 
-	jupyter nbconvert --execute --inplace --output=$@ --ExecutePreprocessor.timeout=-1 $<;
-	jupyter trust $<;
+	jupyter nbconvert --execute --inplace --output=$@ --ExecutePreprocessor.timeout=-1 --to notebook $<;
+	jupyter trust $@;
 
 $(BUILD_DIR)/%_stripped.ipynb: $(BUILD_DIR)/%.ipynb
 	python strip_skipped_cells.py $< $@;
