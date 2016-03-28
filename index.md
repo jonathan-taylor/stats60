@@ -9,7 +9,7 @@
 - Office: Sequoia Hall #137
 - Phone: 723-9230, 
 - [Email](https://stanfordwho.stanford.edu/auth/lookup?search=Jonathan%20Taylor)
-- Office hours: Th 2:00-4:00
+- Office hours: Th 1:00-3:00
 
 Lucy Xia
 
