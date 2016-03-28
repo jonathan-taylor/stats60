@@ -83,5 +83,8 @@ all: html htmlout slides tables $(BUILD_DIR)/index.html
 
 	cp -r practice_quizzes $(BUILD_DIR)/practice_quizzes;
 
-deploy: 
-	rsync -avz build/* $(SUNET)@corn.stanford.edu:/afs/ir/class/stats60/WWW
+jtaylo_deploy: 
+	rsync -avz build/* jtaylo@corn.stanford.edu:/afs/ir/class/stats60/WWW
+
+lucy_deploy: 
+	rsync -avz build/* lucyxia@corn.stanford.edu:/afs/ir/class/stats60/WWW
