@@ -17,7 +17,6 @@ install:
     - sudo apt-get install $PYTHON-scipy
     - sudo apt-get install python-rpy2
     - sudo apt-get install python-tz
-    - sudo apt-get install jupyter
     - sudo apt-get install pandoc
     - sudo pip install -r requirements.docs.txt
     # Make the html
