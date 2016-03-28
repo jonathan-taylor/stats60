@@ -17,7 +17,7 @@ install:
     - sudo apt-get install $PYTHON-scipy
     - sudo apt-get install pandoc
     - pip install -r requirements.docs.txt
-    # Make the slides
+    # Make the html
     - make all
     - $PYTHON setup.py build
     - sudo $PYTHON setup.py install
