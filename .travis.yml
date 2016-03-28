@@ -21,6 +21,7 @@ install:
     - sudo apt-get install pandoc
     - sudo pip install -r requirements.docs.txt
     # Make the html
+    - cp -r notebooks/code code
     - make all
     - $PYTHON setup.py build
     - sudo $PYTHON setup.py install
