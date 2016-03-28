@@ -1,7 +1,8 @@
 sphinx
 notedown
-rpy2
-numpy 
+numpy
 scipy
+rpy2
 ipy_table
+jupyter
 nbconvert
