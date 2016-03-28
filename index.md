@@ -84,7 +84,7 @@ is assumed, but there is no calculus prerequisite.
 
 ## Homework
 
-- There will be weekly homework assignments, run through our [online system](http://stats60.stanford.edu/cgi-bin/index.cgi/).
+- There will be weekly homework assignments, run through our [online system](http://stats60.stanford.edu/cgi-bin/index.cgi/)
 
 - You may discuss homework problems with other students and with TAs in office hours, but you have to prepare the solutions yourself. 
 
