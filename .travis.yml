@@ -24,7 +24,7 @@ install:
     - sudo apt-get install python-tz
     - sudo apt-get install pandoc
     - sudo pip install -r requirements.docs.txt
-    - sudo pip install -U rpy2
+    - sudo pip install -U rpy2 matplotlib
 script:
     # make the html
     - make all
