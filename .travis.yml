@@ -8,7 +8,7 @@
 before_install:
     - sudo add-apt-repository "deb https://cran.r-project.org/bin/linux/ubuntu precise/"
     - sudo apt-get -qq update
-    - sudo apt-get install r-base-dev
+    - sudo apt-get install r-base-dev --force-yes
 language: erlang
 env:
     # Enable python 2 and python 3 builds. Python3 available in Ubuntu 12.04.
