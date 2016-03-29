@@ -19,7 +19,8 @@ install:
     - sudo apt-get install python-rpy2
     - sudo apt-get install python-tz
     - sudo apt-get install pandoc
-    - sudo pip install -U -r requirements.docs.txt
+    - sudo pip install -r requirements.docs.txt
+    - sudo pip install -U rpy2
 script:
     # make the html
     - make all
