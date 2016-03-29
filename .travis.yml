@@ -13,7 +13,7 @@ language: erlang
 env:
     # Enable python 2 and python 3 builds. Python3 available in Ubuntu 12.04.
     - PYTHON=python PYSUF=''
-    - PYTHON=python3 PYSUF=3
+    # - PYTHON=python3 PYSUF=3 notebooks are python2
 install:
     - sudo apt-get update
     - sudo apt-get install $PYTHON-dev
