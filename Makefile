@@ -12,10 +12,6 @@ HTML_OUTPUTS = $(patsubst %.ipynb, %.html, $(NB_OUTPUTS))
 $(BUILD_DIR)/%.ipynb: $(NOTEBOOK_DIR)/%.ipynb
 	mkdir -p $(BUILD_DIR); 
 	jupyter nbconvert --execute --inplace --output=$@ --ExecutePreprocessor.timeout=-1 --to notebook $<;
-	#jupyter nbconvert --execute --allow-errors --inplace --output=$@ --ExecutePreprocessor.timeout=-1 --to notebook $<;
-	#jupyter nbconvert --to markdown --output=tmp.md --ExecutePreprocessor.timeout=-1 $@;
-	#python -c "print(file('tmp.md').read())";	
-	ls blah2;
 	jupyter trust $@;
 
 $(BUILD_DIR)/%_stripped.ipynb: $(BUILD_DIR)/%.ipynb
