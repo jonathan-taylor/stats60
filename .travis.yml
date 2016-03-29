@@ -5,6 +5,10 @@
 # travis-ci; it uses virtualenvs, they do not have numpy, scipy, matplotlib,
 # and it is impractical to build them
 #
+before_install:
+    - sudo add-apt-repository "deb https://cran.r-project.org/bin/linux/ubuntu precise/"
+    - sudo apt-get -qq update
+    - sudo apt-get install r-base-dev
 language: erlang
 env:
     # Enable python 2 and python 3 builds. Python3 available in Ubuntu 12.04.
@@ -17,6 +21,7 @@ install:
     - sudo apt-get install $PYTHON-scipy
     - sudo apt-get install python-matplotlib
     - sudo apt-get install python-rpy2
+    - sudo apt-get install r-base-dev
     - sudo apt-get install python-tz
     - sudo apt-get install pandoc
     - sudo pip install -r requirements.docs.txt
