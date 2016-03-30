@@ -100,7 +100,9 @@ The homeworks will all follow the same schedule every week: TBA.
 
 According to the [exam schedule](http://studentaffairs.stanford.edu/registrar/students/spring-exams) our exam is to be held on Saturday June 4, at 8:30 AM. 
 
+<!---
 Here is a  [practice final](practice_final.pdf), ([solution](practice_final_solution.pdf)).
+--->
 
 ## Practice Quizzes
 
