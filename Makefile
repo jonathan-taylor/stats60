@@ -67,12 +67,11 @@ tables : $(NB_OUTPUTS)
 
 $(BUILD_DIR)/index.html : index.md
 	
-	mkdir -p sphinx;
 	notedown index.md > index.ipynb;
 	jupyter nbconvert --to=rst index.ipynb --output=index;
 	rm index.ipynb;
 	mv index.rst sphinx;
-	sphinx-build -E -b html sphinx _build/html ;
+	sphinx-build -v -E -b html sphinx _build/html ;
 	cp -r _build/html/* build;
 
 clean:
