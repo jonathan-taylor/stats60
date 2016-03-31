@@ -9,7 +9,7 @@ SLIDE_OUTPUTS = $(patsubst %.ipynb, %.slides.html, $(NB_OUTPUTS))
 STRIPPED_NB_OUTPUTS = $(patsubst $(BUILD_DIR)/%.ipynb, $(BUILD_DIR)/%_stripped.ipynb, $(NOTEBOOKS))
 HTML_OUTPUTS = $(patsubst %.ipynb, %.html, $(NB_OUTPUTS))
 
-$(BUILD_DIR)/%.ipynb: $(NOTEBOOK_DIR)/%.ipynb
+$(BUILD_DIR)/%.ipynb: $(NOTEBOOK_DIR)/%.ipynb $(BUILD_DIR)/code $(BUILD_DIR)/data $(BUILD_DIR)/images
 	mkdir -p $(BUILD_DIR); 
 	cp $< $@;
 	jupyter nbconvert --execute --inplace --ExecutePreprocessor.timeout=-1 --to notebook $@;
@@ -30,13 +30,18 @@ $(BUILD_DIR)/%.slides.html:$(BUILD_DIR)/%.ipynb
 	#mv `basename $@` $(BUILD_DIR);
 
 
+$(BUILD_DIR)/code : $(NOTEBOOK_DIR)/code
+	cp -r $(NOTEBOOK_DIR)/code $(BUILD_DIR)/code;
+
+$(BUILD_DIR)/data : $(NOTEBOOK_DIR)/data
+	cp -r $(NOTEBOOK_DIR)/code $(BUILD_DIR)/code;
+
+$(BUILD_DIR)/images : $(NOTEBOOK_DIR)/images
+	cp -r $(NOTEBOOK_DIR)/code $(BUILD_DIR)/code;
+
 html: $(NB_OUTPUTS) 
 
 	pip install -q -r requirements.docs.txt
-
-	cp -r $(NOTEBOOK_DIR)/code $(BUILD_DIR)/code;
-	cp -r $(NOTEBOOK_DIR)/data $(BUILD_DIR)/data;
-	cp -r $(NOTEBOOK_DIR)/images $(BUILD_DIR)/images;
 
 slides: $(SLIDE_OUTPUTS)
 
