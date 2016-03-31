@@ -9,7 +9,7 @@
 - Office: Sequoia Hall #137
 - Phone: 723-9230, 
 - [Email](https://stanfordwho.stanford.edu/auth/lookup?search=Jonathan%20Taylor)
-- Office hours: TBA
+- Office hours: Th 1:00-3:00
 
 Lucy Xia
 
@@ -84,7 +84,7 @@ is assumed, but there is no calculus prerequisite.
 
 ## Homework
 
-- There will be weekly homework assignments, run through our [online system](http://stats60.stanford.edu/cgi-bin/index.cgi/).
+- There will be weekly homework assignments, run through our [online system](http://stats60.stanford.edu/cgi-bin/index.cgi/)
 
 - You may discuss homework problems with other students and with TAs in office hours, but you have to prepare the solutions yourself. 
 
@@ -100,7 +100,9 @@ The homeworks will all follow the same schedule every week: TBA.
 
 According to the [exam schedule](http://studentaffairs.stanford.edu/registrar/students/spring-exams) our exam is to be held on Saturday June 4, at 8:30 AM. 
 
+<!---
 Here is a  [practice final](practice_final.pdf), ([solution](practice_final_solution.pdf)).
+--->
 
 ## Practice Quizzes
 
