@@ -13,6 +13,7 @@ $(BUILD_DIR)/%.ipynb: $(NOTEBOOK_DIR)/%.ipynb $(BUILD_DIR)/code $(BUILD_DIR)/dat
 	mkdir -p $(BUILD_DIR); 
 	cp $< $@;
 	jupyter nbconvert --execute --inplace --ExecutePreprocessor.timeout=-1 --to notebook $@;
+	mv *nb $(BUILD_DIR);
 	jupyter trust $@;
 
 $(BUILD_DIR)/%_stripped.ipynb: $(BUILD_DIR)/%.ipynb
@@ -21,13 +22,13 @@ $(BUILD_DIR)/%_stripped.ipynb: $(BUILD_DIR)/%.ipynb
 $(BUILD_DIR)/%.html:$(BUILD_DIR)/%_stripped.ipynb
 	jupyter nbconvert --to html --output=`basename $@` $<;
 	# it seems to dump in this directory instead of $(BUILD_DIR)
-	# mv `basename $@` build;
+	mv `basename $@` build;
 	# rm $<;
 
 $(BUILD_DIR)/%.slides.html:$(BUILD_DIR)/%.ipynb
 	jupyter nbconvert --to slides --reveal-prefix=http://cdn.jsdelivr.net/reveal.js/2.6.2 $<;
 	# it seems to dump in this directory instead of $(BUILD_DIR)
-	#mv `basename $@` $(BUILD_DIR);
+	mv `basename $@` $(BUILD_DIR);
 
 
 $(BUILD_DIR)/code : $(NOTEBOOK_DIR)/code
