@@ -31,13 +31,16 @@ $(BUILD_DIR)/%.slides.html:$(BUILD_DIR)/%.ipynb
 
 
 $(BUILD_DIR)/code : $(NOTEBOOK_DIR)/code
+	mkdir -p build;
 	cp -r $(NOTEBOOK_DIR)/code $(BUILD_DIR)/code;
 
 $(BUILD_DIR)/data : $(NOTEBOOK_DIR)/data
-	cp -r $(NOTEBOOK_DIR)/code $(BUILD_DIR)/code;
+	mkdir -p build;
+	cp -r $(NOTEBOOK_DIR)/data $(BUILD_DIR)/data;
 
 $(BUILD_DIR)/images : $(NOTEBOOK_DIR)/images
-	cp -r $(NOTEBOOK_DIR)/code $(BUILD_DIR)/code;
+	mkdir -p build;
+	cp -r $(NOTEBOOK_DIR)/images $(BUILD_DIR)/images;
 
 html: $(NB_OUTPUTS) 
 

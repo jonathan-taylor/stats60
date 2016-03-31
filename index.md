@@ -16,29 +16,29 @@ Lucy Xia
 - Office: Sequoia Hall #244
 - Phone: 497-8146
 - [Email](https://stanfordwho.stanford.edu/auth/lookup?search=Lucy%20Xia)
-- Office hours: TBA
+- Office hours: Friday 10:30-12:30
 
 #### Teaching Assistants
 
 Cyrus DiCiccio
 
 -  [Email](mailto:stats60-spr1516-staff@lists.stanford.edu)
--  Office hours : TBA
+-  Office hours : Tuesday 11:00-1:00 in Sequoia Hall 208
 
 Jing Miao
 
 -  [Email](mailto:stats60-spr1516-staff@lists.stanford.edu)
--  Office hours : TBA
+-  Office hours : Wednesday 3:00-5:00 in 420-245
 
 Paulo Orenstein
 
 -  [Email](mailto:stats60-spr1516-staff@lists.stanford.edu)
--  Office hours : TBA
+-  Office hours : TBA in Sequoia Hall 241
 
 Jun Yan
 
 -  [Email](mailto:stats60-spr1516-staff@lists.stanford.edu)
--  Office hours : TBA
+-  Office hours : Monday 4:30-6:30 in Sequoia Hall 211
 
 
 ## Email list
