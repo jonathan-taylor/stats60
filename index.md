@@ -148,7 +148,7 @@ Here is a  [practice final](practice_final.pdf), ([solution](practice_final_solu
 
 ### Week 4
 
-- [Chapter 15: Binomial formula](http://nbviewer.jupyter.org/format/slides/url/stats60.stanford.edu/Binomial.ipynb), [html](Binomail.html) 
+- [Chapter 15: Binomial formula](http://nbviewer.jupyter.org/format/slides/url/stats60.stanford.edu/Binomial.ipynb), [html](Binomial.html) 
 - [Exercises](http://nbviewer.jupyter.org/format/slides/url/stats60.stanford.edu/exercises/Excersises4.ipynb), [html](Exercises4.html)
 
 ### Week 5
