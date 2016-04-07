@@ -23,7 +23,7 @@ Lucy Xia
 Cyrus DiCiccio
 
 -  [Email](mailto:stats60-spr1516-staff@lists.stanford.edu)
--  Office hours : Tuesday 11:00-1:00 in Sequoia Hall 208
+-  Office hours : Tuesday 11:00-1:00 in Sequoia Hall 105
 
 Jing Miao
 
@@ -33,12 +33,12 @@ Jing Miao
 Paulo Orenstein
 
 -  [Email](mailto:stats60-spr1516-staff@lists.stanford.edu)
--  Office hours : TBA in Sequoia Hall 241
+-  Office hours : Monday 10:30-12:30 in Sequoia Hall 220
 
 Jun Yan
 
 -  [Email](mailto:stats60-spr1516-staff@lists.stanford.edu)
--  Office hours : Monday 4:30-6:30 in Sequoia Hall 211
+-  Office hours : Monday 4:30-6:30 in Sequoia Hall 220
 
 
 ## Email list
@@ -53,7 +53,7 @@ The course has an email list that reaches all TAs as well as the professors: sta
 
 ## Schedule & Location
 
-M-Th 9:30-10:20, 420-040. F 9:30-10:20 TBA.
+M-Th 9:30-10:20, 420-040. F 9:30-10:20, 420-040; 11:30-12:20, Sequoia 200; 3:30-4:20, Sequoia 200.
 
 ## Textbook
 
@@ -70,7 +70,7 @@ is assumed, but there is no calculus prerequisite.
 
 - There will be quizzes every two weeks held on Wednesdays.
 
-- Friday's session (F 9:30-10:20) will be devoted to problem sessions held by the TAs. 
+- Friday's session (F 9:30-10:20, 11:30-12:20, 3:30-4:20) will be devoted to problem sessions held by the TAs. There are three sessions, with the same material; feel free to attend any one of them. 
 
 - All relevant class information, such as homework assignments, solutions, and organizational matters, will be posted on the coursework web page.
 
