@@ -65,10 +65,14 @@ def dice(digits,size=(150,150)):
 
     """
 
-    output = np.zeros((size[0]*1.2,2.4*size[1],4), np.uint8)
+    output = np.zeros((int(size[0]*1.2),int(2.4*size[1]),4), np.uint8)
     img1, img2 = [die(digits[i]) for i in range(2)]
-    output[0.1*size[0]:1.1*size[0],0.1*size[1]:1.1*size[1]] = img1[:(1.1*size[0]-0.1*size[0]),:(1.1*size[1]-0.1*size[1])]
-    output[0.1*size[0]:1.1*size[0]:,1.3*size[1]:2.3*size[1]] = img2[:(1.1*size[0]-0.1*size[0]),:(2.3*size[1]-1.3*size[1])]
+    output[int(0.1*size[0]):int(1.1*size[0]),
+           int(0.1*size[1]):int(1.1*size[1])] = img1[:int(1.1*size[0]-0.1*size[0]),
+                                                      :int(1.1*size[1]-0.1*size[1])]
+    output[int(0.1*size[0]):int(1.1*size[0]):,
+           int(1.3*size[1]):int(2.3*size[1])] = img2[:int(1.1*size[0]-0.1*size[0]),
+                                                 :int(2.3*size[1]-1.3*size[1])]
     return output
 
 def die_html(digit, height=100, width=100):
