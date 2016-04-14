@@ -73,10 +73,9 @@ class Marbles(BoxModel):
 
     def __init__(self, values, grid=(-1,5), replace=True):
         values = copy(values)
-        self.replace = replace
         self.grid = grid
         np.random.shuffle(values)
-        BoxModel.__init__(self, values)
+        BoxModel.__init__(self, values, replace=replace)
         self._cached_html_ = _html_box(self.values, grid=self.grid)
         self._drawn = []
 
@@ -99,6 +98,9 @@ class Marbles(BoxModel):
         else:
             self._drawn.append(self.values[outcome])
             return self.values[outcome]
+
+    def sample(self, ntrial):
+        return [self.trial() for _ in range(ntrial)]
 
     def last_draw(self):
         if hasattr(self, "_cached_html_trial_"):

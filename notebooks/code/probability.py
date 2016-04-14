@@ -163,7 +163,7 @@ class BoxModel(ProbabilitySpace):
         return [self.values[i] for i in idx]
 
     def trial(self):
-        idx = np.random.choice(len(self.values), 1, replace=self.replace)
+        idx = int(np.random.choice(len(self.values), 1, replace=self.replace))
         self.outcome = self.values[idx]
         return self.outcome
 
