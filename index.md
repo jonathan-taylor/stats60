@@ -94,7 +94,7 @@ is assumed, but there is no calculus prerequisite.
 
 ### Homework schedule
 
-The homeworks will all follow the same schedule every week: TBA.
+The homeworks will all follow the same schedule every week: due Fridays and Tuesdays.
 
 ## Final Exam
 
