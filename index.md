@@ -126,7 +126,7 @@ Here is a  [practice final](practice_final.pdf), ([solution](practice_final_solu
 
 - [Chapter 5: Normal distribution for data](http://nbviewer.jupyter.org/format/slides/url/stats60.stanford.edu/Normal_distribution.ipynb), [html](Normal_distribution.html)
 
-- [Exercises](http://nbviewer.jupyter.org/format/slides/url/stats60.stanford.edu/exercises/Exercises1.ipynb), [html](Exercises1.html) 
+- [Exercises](http://nbviewer.jupyter.org/format/slides/url/stats60.stanford.edu/Exercises1.ipynb), [html](Exercises1.html) 
 
 
 ### Week 2 
@@ -137,51 +137,51 @@ Here is a  [practice final](practice_final.pdf), ([solution](practice_final_solu
 
 - [Chapters 8 and 9: Correlation](http://nbviewer.jupyter.org/format/slides/url/stats60.stanford.edu/Correlation.ipynb), [html](Correlation.html)
 
-- [Exercises](http://nbviewer.jupyter.org/format/slides/url/stats60.stanford.edu/exercises/Excersises2.ipynb), [html](Exercises2.html)
+- [Exercises](http://nbviewer.jupyter.org/format/slides/url/stats60.stanford.edu/Exercises2.ipynb), [html](Exercises2.html)
 
 
 ### Week 3 
 
 - [Chapters 10-12: Regression](http://nbviewer.jupyter.org/format/slides/url/stats60.stanford.edu/Regression.ipynb), [html](Regression.html)
 - [Chapter 13: Probability](http://nbviewer.jupyter.org/format/slides/url/stats60.stanford.edu/Probability.ipynb), [html](Probability.html)
-- [Exercises](http://nbviewer.jupyter.org/format/slides/url/stats60.stanford.edu/exercises/Excersises3.ipynb), [html](Exercises3.html)
+- [Exercises](http://nbviewer.jupyter.org/format/slides/url/stats60.stanford.edu/Exercises3.ipynb), [html](Exercises3.html)
 
 ### Week 4
 
 - [Chapter 15: Binomial formula](http://nbviewer.jupyter.org/format/slides/url/stats60.stanford.edu/Binomial.ipynb), [html](Binomial.html) 
-- [Exercises](http://nbviewer.jupyter.org/format/slides/url/stats60.stanford.edu/exercises/Excersises4.ipynb), [html](Exercises4.html)
+- [Exercises](http://nbviewer.jupyter.org/format/slides/url/stats60.stanford.edu/Exercises4.ipynb), [html](Exercises4.html)
 
 ### Week 5
 
 - [Monty Hall](http://nbviewer.jupyter.org/format/slides/url/stats60.stanford.edu/Monty_Hall.ipynb), [html](Monty_Hall.html) 
 - [Chapters 16-17: Chance variability](http://nbviewer.jupyter.org/format/slides/url/stats60.stanford.edu/Chance_variability.ipynb), [html](Chance_variability.html)
 - [Chapters 18: Probability Histogram](http://nbviewer.jupyter.org/format/slides/url/stats60.stanford.edu/Probability_Histogram.ipynb), [html](Probability_Histogram.html) 
-- [Exercises](http://nbviewer.jupyter.org/format/slides/url/stats60.stanford.edu/exercises/Excersises5.ipynb), [html](Exercises5.html)
+- [Exercises](http://nbviewer.jupyter.org/format/slides/url/stats60.stanford.edu/Exercises5.ipynb), [html](Exercises5.html)
 
 ### Week 6
 
 - [Chapters 19-20: Sample surveys](http://nbviewer.jupyter.org/format/slides/url/stats60.stanford.edu/Sampling.ipynb), [html](Sampling.html) 
 - [Chapter 21: Accuracy of percentages](http://nbviewer.jupyter.org/format/slides/url/stats60.stanford.edu/Confidence_Intervals.ipynb), [html](Confidence_Intervals.html) 
-- [Exercises](http://nbviewer.jupyter.org/format/slides/url/stats60.stanford.edu/exercises/Excersises6.ipynb), [html](Exercises6.html)
+- [Exercises](http://nbviewer.jupyter.org/format/slides/url/stats60.stanford.edu/Exercises6.ipynb), [html](Exercises6.html)
 
 ### Week 7
 
 - [Chapter 23: Accuracy of averages](http://nbviewer.jupyter.org/format/slides/url/stats60.stanford.edu/Accuracy_of_averages.ipynb), [html](Accuracy_of_averages.html) 
 - [Chapter 24: Gauss model](http://nbviewer.jupyter.org/format/slides/url/stats60.stanford.edu/Gauss_model.ipynb), [html](Gauss_model.html)
 - [Chapter 26: Hypothesis tests](http://nbviewer.jupyter.org/format/slides/url/stats60.stanford.edu/Hypothesis_tests.ipynb), [html](Hypothesis_tests.html)
-- [Exercises](http://nbviewer.jupyter.org/format/slides/url/stats60.stanford.edu/exercises/Excersises7.ipynb), [html](Exercises7.html)
+- [Exercises](http://nbviewer.jupyter.org/format/slides/url/stats60.stanford.edu/Exercises7.ipynb), [html](Exercises7.html)
 
 ### Week 8
 
 - [Chapter 26: Hypothesis tests](http://nbviewer.jupyter.org/format/slides/url/stats60.stanford.edu/Hypothesis_tests.ipynb), [html](Hypothesis_tests.html) 
 - [Chapter 27: Two sample tests](http://nbviewer.jupyter.org/format/slides/url/stats60.stanford.edu/Two_sample_test.ipynb), [html](Two_sample_test.html) 
-- [Exercises](http://nbviewer.jupyter.org/format/slides/url/stats60.stanford.edu/exercises/Excersises8.ipynb), [html](Exercises8.html)
+- [Exercises](http://nbviewer.jupyter.org/format/slides/url/stats60.stanford.edu/Exercises8.ipynb), [html](Exercises8.html)
 
 ### Week 9
 
 - [Chapter 28: Chi-squared tests](http://nbviewer.jupyter.org/format/slides/url/stats60.stanford.edu/Chisquared.ipynb), [html](Chisquared.html) 
 - [Regression revisited](http://nbviewer.jupyter.org/format/slides/url/stats60.stanford.edu/Regression_revisited.ipynb), [html](Regression_revisited.html) 
-- [Exercises](http://nbviewer.jupyter.org/format/slides/url/stats60.stanford.edu/exercises/Excersises9.ipynb), [html](Exercises9.html)
+- [Exercises](http://nbviewer.jupyter.org/format/slides/url/stats60.stanford.edu/Exercises9.ipynb), [html](Exercises9.html)
 
 ### Week 10
 
